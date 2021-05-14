@@ -1,0 +1,611 @@
+body {
+  background-color: rgb(221, 220, 220);
+  font: 1em sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgb(202, 198, 198);
+  background-color: rgb(238, 232, 232);
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  color: rgb(90, 85, 85);
+  margin-top: 10px;
+  text-align: center;
+}
+.center {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 2rem;
+}
+nav .logo svg {
+  width: 60px;
+  height: auto;
+  background-color: grey;
+  background-color: transparent;
+}
+
+/* the main heading */
+.the-heading {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.the-heading a svg {
+  width: 300px;
+}
+.the-heading h2 {
+  font-size: 30px;
+  color: grey;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+/*  main section */
+.main-section {
+  padding: 40px;
+  width: 95%;
+  margin: auto;
+  box-sizing: border-box;
+  height: 700px;
+  color: white;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 49% 24% 24%;
+  grid-template-rows: 38% 20% 38%;
+  grid-gap: 1rem;
+position: relative;
+  grid-template-areas:
+    "grid-area1  grid-area2 grid-area3"
+   
+    "grid-area1  grid-area5 grid-area5"
+    "grid-area4  grid-area5 grid-area5";
+}
+.container{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+text-align: left;
+}
+
+.container a {
+  color: white;
+
+}
+.grid-area1 {
+
+  grid-area: grid-area1;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fheader-image-xbox-series-x-series-s-microsoft-quick-resume-feature-update.png&signature=ee9fe6fd7639490677708a1d41dc19af);
+}
+.grid-area2 {
+  grid-area: grid-area2;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FChina%E2%80%99s-Tiangong-space-station-hed.jpg&signature=466df65f78b08c2b650132fffaf6c787);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grid-area3 {
+  grid-area: grid-area3;
+  background-image: url(        https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FChina%E2%80%99s-Tiangong-space-station-hed.jpg&signature=466df65f78b08c2b650132fffaf6c787);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grid-area4 {
+  grid-area: grid-area4;
+  background-image: url(https://media.istockphoto.com/vectors/abstract-red-light-trail-on-blue-background-vector-id958693744?k=6&m=958693744&s=612x612&w=0&h=8fxI021WWzfZyfu-inVXxR_dejuWCZtGTSSQ6ftg5p4=);
+}
+.grid-area5 {
+background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F02%2Ftesla-elon-musk-nicekl-back-car-ev-future-battery-tech.png&signature=18b1b8faff58dcac7f0ffef81d0bd87e); 
+background-size: cover;
+background-repeat: no-repeat; 
+grid-area: grid-area5;
+}
+
+
+.popular-article {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.cards {
+  width: 18%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.cards a {
+  width: 80%;
+  height: auto;
+}
+.cards h2 {
+  color: rgb(214, 26, 167);
+}
+.latest-stories {
+  margin: auto;
+  width: 90%;
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 1.3rem; */
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.stories {
+  width: 23%;
+  line-height: 1;
+  padding: 12px;
+}
+
+/* explore our channels */
+.channels {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+.channel a {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: wheat;
+}
+.channel-card1 {
+  text-align: center;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-plugged.jpg&signature=7702697239da7f47625866f9bd0b7cad);
+  background-repeat: no-repeat;
+}
+.channel-card2 {
+  text-align: center;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-neural.jpg&signature=e2214820cceb78b748acdb3a73536e20);
+  background-repeat: no-repeat;
+}
+.channel-card3 {
+  text-align: center;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-shift.jpg&signature=7bd918d46dfac160834d7ccdde543fe9);
+  background-repeat: no-repeat;
+}
+.channel-card4 {
+  text-align: center;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-growth-quarters.jpg&signature=3fffd5be376accdf91664a5906cebe68);
+  background-repeat: no-repeat;
+}
+.channel-card5 {
+  text-align: center;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=215%2C265&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=6cf234f776f9a1fa060101f1d8d9866b);
+  background-repeat: no-repeat;
+}
+.goals {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.work {
+  width: 40%;
+}
+.work button {
+  background-color: rgb(65, 230, 230);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width: 40%;
+  gap: 1rem;
+}
+.rounded {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.right img {
+  width: 100px;
+}
+
+.newsletter {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 120px 0 120px 0;
+  background-image: url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  color: white;
+}
+
+.heading {
+  /* margin-top: 80px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.heading span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.heading a {
+  text-decoration: none;
+  color: rgb(0, 204, 204);
+}
+
+.heading a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input svg {
+  height: 18px;
+  fill: rgb(167, 170, 178);
+  position: absolute;
+  left: 10px;
+}
+
+.input input {
+  width: 70%;
+ 
+  border: none;
+  outline: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 12px 0 12px 35px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(80, 86, 102);
+}
+
+.input button {
+  height: 48px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(167, 170, 178);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.social {
+  width: 265px;
+  height: 24px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 24px;
+}
+
+.social svg {
+  height: 24px;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.social svg:hover {
+  fill: rgb(255, 255, 255);
+}
+.supported-links {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.supported-links a {
+  width: 12.5%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.supported-links a svg {
+  width: 100%;
+  fill: rgb(180, 180, 180);
+}
+
+.v a svg:hover {
+  fill: rgb(120, 120, 120);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgb(0, 0, 0);
+}
+.footer-top {
+  width: 100%;
+  padding: 70px 0 30px 70px;
+  border-bottom: 1px solid rgb(105, 112, 133);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-social {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.social2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.social2 svg {
+  height: 24px;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.social2 svg:hover {
+  fill: rgb(255, 255, 255);
+}
+
+.logo svg {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+}
+
+.links {
+  width: 50%;
+  display: flex;
+}
+
+.links h1 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.links a {
+  color: rgb(0, 204, 204);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration-line: underline;
+}
+
+.more,
+.about {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-bottom {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: rgb(167, 170, 178);
+}
+
+.footer-bottom span {
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: rgb(204, 0, 153);
+}
+@media only screen and (max-width: 1200px) {
+  .center{
+    display: flex;
+    justify-content: flex-start;
+padding-left: 20px;
+  }
+  .main-section{
+    margin: 0;
+    width: 130%;
+    display: grid;
+    grid-template-columns: 60% 24% 24%;
+  grid-template-rows: 38% 20% 38%;
+  grid-template-areas:
+  "grid-area1  grid-area2 grid-area3"
+ 
+  "grid-area1  grid-area5 grid-area5"
+  "grid-area4  grid-area5 grid-area5";
+  }
+  
+
+  .popular-article{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards{
+    width: 90%;
+    margin: auto;
+  }
+  .latest-stories{
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+  }
+  .stories{
+    width: 45%;
+  }
+  .stories img{
+    width: 100%;
+  }
+  .channels{
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+  .goals {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .work {
+    width: 100%;
+  }
+  .right {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .supported-links {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .supported-links a  {
+    width: 33%
+  }
+  
+}
+@media only screen and (max-width: 800px){
+  body{
+    font-size: 20px;
+  }
+  .main-section{
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 60% 38% ;
+    grid-template-rows: 38% 20% 38%;
+    grid-template-areas:
+    "grid-area1  grid-area2 "
+   
+    "grid-area1  grid-area3"
+    "grid-area4  grid-area5 ";
+  }
+  .latest-stories{
+    width: 100%;
+    gap: 1rem;
+
+  }
+  .stories{
+    width: 100%;
+  }
+  .supported-links a  {
+    width: 100%
+  }
+  .the-heading{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+  }
+  .newsletter{
+    width: 100%;
+    background-position: 100 100;
+    margin: auto;
+  }
+  .supported-links {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .supported-links a  {
+    width: 83%
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.more .about{
+  width: 100%;
+}
+footer{
+  width: 100%;
+  margin: 0;
+  
+}
+.footer-top{
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.links{
+  padding: 20px;
+}
+.channels{
+  width: 150%;
+}
+}
